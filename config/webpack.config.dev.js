@@ -168,6 +168,12 @@ module.exports = {
       // Remember to add the new extension(s) to the "url" loader exclusion list.
     ]
   },
+
+  sassLoader: {
+    includePaths: [
+      './node_modules'
+    ]
+  },
   
   // We use PostCSS for autoprefixing only.
   postcss: function() {
