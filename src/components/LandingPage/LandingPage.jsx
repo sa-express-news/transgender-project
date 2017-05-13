@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Article from 'grommet/components/Article';
-
 import store from '../../store';
 import actions from '../../actions';
 
@@ -24,9 +22,10 @@ class LandingPageContainer extends Component {
 
   render() {
     return (
-      <Article>
-        <Splash stories={this.props.stories} />
-      </Article>
+      <Splash 
+        stories={this.props.stories}
+        className="Splash"
+      />
     );
   }
 }

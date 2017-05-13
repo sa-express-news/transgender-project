@@ -3,23 +3,32 @@ import _ from 'lodash';
 import * as types from '../actions/action-types';
 
 const defaultStory = {
+  id: '',
   title: '',
   subtitle: '',
   byline: '',
   excerpt: '',
-  cover_partial: '',
+  cover: '',
   slug: '',
+  bgImg: '',
 };
+
+const buildBgImg = story => {
+  return `https://expressnewssandbox.atavist.com/data/files/organization/${story.organization_id}/image/raw/${story.project.title_page}`;
+}
 
 const pluckStoryProps = stories => {
   return _.map(stories, story => {
+    debugger;
     return {
+      id: story.project.id,
       title: story.project.title,
       subtitle: story.project.subtitle,
       byline: story.project.byline,
       excerpt: story.project.excerpt,
-      cover_partial: story.project.cover_partial,
+      cover: story.project.cover_partial,
       slug: story.project.slug,
+      bgImg: buildBgImg(story),
     };
   });
 };
