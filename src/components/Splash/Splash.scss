@@ -1,17 +1,32 @@
 article.splash {
-  height: 90vh;
+  .grommetux-button .grommetux-button__icon .grommetux-control-icon {
+    stroke: #bbb;
+    fill: #bbb;
 
-  .grommetux-control-icon {
-    // stroke: #fff;
-    // fill: #fff;
+    &:hover {
+      stroke: #666;
+      fill: #666;
+    }
   }
+  
+  @media screen and (min-width: 44.9376em) {
+    height: 80vh;
 
-  div.grommetux-hero.grommetux-hero--large {
-    width: 100vw;
-    height: 100vh;
-  }
+    button.grommetux-button.grommetux-article__control {
+      top: 40%;
+    }
 
-  .slide {
-    height: 90vh;
+    div.text-wrap {
+      height: 80vh;
+    }
+
+    div.grommetux-hero {
+      width: 100vw;
+      height: 80vh;
+    }
+
+    .slide {
+      height: 80vh;
+    }
   }
 }

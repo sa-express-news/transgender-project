@@ -19,7 +19,6 @@ const buildBgImg = story => {
 
 const pluckStoryProps = stories => {
   return _.map(stories, story => {
-    debugger;
     return {
       id: story.project.id,
       title: story.project.title,
