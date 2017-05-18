@@ -14,14 +14,14 @@ article.Splash {
   }
 
   @media screen and (min-width: 44.9376em) {
-    height: 40vh;
+    height: 46vh;
 
     button.grommetux-button.grommetux-article__control {
-      top: calc(20% + 36px);
+      top: calc(23% + 36px);
     }
 
     div.text-wrap {
-      height: 40vh;
+      height: 46vh;
       color: rgba(255, 255, 255, 1);
 
       &:hover {
@@ -31,11 +31,11 @@ article.Splash {
 
     div.grommetux-hero {
       width: 100vw;
-      height: 40vh;
+      height: 46vh;
     }
 
     .slide {
-      height: 40vh;
+      height: 46vh;
     }
   }
 }

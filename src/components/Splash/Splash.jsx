@@ -15,6 +15,39 @@ import './Splash.scss';
 const vidSrc = require('../../videos/overview.mp4');
 const poster = require('../../images/video-poster.jpg');
 
+const Splash = props => {
+  return (
+    <Article 
+      scrollStep={true}
+      direction="row"
+      controls={props.navIsVisible}
+      className="Splash"
+    >
+      <Section 
+        pad="none"
+        justify="center"
+        align="center"
+        colorIndex="grey-1"
+        full="horizontal"
+        className="slide"
+        key='video'
+      >
+        <Video 
+          full={true}
+          fit="cover"
+          poster={poster}
+        >
+          <source 
+            src={vidSrc}
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+      {_.map(props.stories, buildArticleSection)}
+    </Article>
+  );
+};
+
 const buildArticleSection = (story, key) => (
   <Section 
     pad="none"
@@ -77,42 +110,6 @@ const buildArticleSection = (story, key) => (
     </Hero>
   </Section>
 );
-
-const Splash = props => {
-  return (
-    <Article 
-      scrollStep={true}
-      direction="row"
-      controls={props.navIsVisible}
-      className="Splash"
-    >
-      {buildArticleSection(props.stories[0], 'lead')}
-      <Section 
-        pad="none"
-        justify="center"
-        align="center"
-        colorIndex="grey-1"
-        full="horizontal"
-        className="slide"
-        key='video'
-      >
-        <Video 
-          full={true}
-          fit="cover"
-          poster={poster}
-        >
-          <source 
-            src={vidSrc}
-            type="video/mp4"
-          />
-        </Video>
-      </Section>
-      {_.map(props.stories.slice(1), (story, key) => {
-        return buildArticleSection(story, key);
-      })}
-    </Article>
-  );
-};
 
 Splash.propTypes = {
   stories: PropTypes.arrayOf(PropTypes.shape({
