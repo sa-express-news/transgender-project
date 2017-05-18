@@ -12,29 +12,23 @@ article.Splash, article.Splash > div {
   }
 
   @media screen and (min-width: 44.9376em) {
-    height: 60vh;
+    height: 40vh;
 
     button.grommetux-button.grommetux-article__control {
-      top: 30%;
+      top: 20%;
     }
 
     div.text-wrap {
-      height: 60vh;
+      height: 40vh;
     }
 
     div.grommetux-hero {
       width: 100vw;
-      height: 60vh;
+      height: 40vh;
     }
 
     .slide {
-      height: 60vh;
-    }
-  }
-
-  @media screen and (max-width: 44.9376em) {
-    button.grommetux-button.grommetux-article__control {
-      position: absolute;
+      height: 40vh;
     }
   }
 }

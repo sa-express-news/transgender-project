@@ -54,6 +54,7 @@ const buildArticleSection = (story, key) => (
           <Heading
             margin="none"
             align="start"
+            tag="h2"
             strong={true}
           >
             {story.title}

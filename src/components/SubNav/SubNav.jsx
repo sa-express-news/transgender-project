@@ -5,7 +5,7 @@ import './SubNav.scss';
 import Box from 'grommet/components/Box';
 import Heading from 'grommet/components/Heading';
 
-const blurb = 'As the nation and Texas have grappled with questions about gender identity and bathroom access, the San Antonio Express-News spent the last year following transgender San Antonians, documenting their transitions and their fight for rights.';
+const blurb = 'The San Antonio Express-News spent the last year following transgender San Antonians, documenting their transitions and their fight for rights.';
 const instructions = 'Rollover the images below for audio, click for full bio.';
 
 export default props => {
