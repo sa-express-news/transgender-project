@@ -3,39 +3,62 @@ article.Splash, article.Splash > div, article.Splash section {
 }
 
 article.Splash {
-  .grommetux-button .grommetux-button__icon .grommetux-control-icon {
-    stroke: #bbb;
-    fill: #bbb;
+  height: 42vh;
 
-    &:hover {
-      stroke: #666;
-      fill: #666;
-    }
-  }
-
-  @media screen and (min-width: 44.9376em) {
-    height: 44vh;
-
-    button.grommetux-button.grommetux-article__control {
-      top: calc(23% + 36px);
-    }
-
-    div.text-wrap {
-      height: 44vh;
-      color: rgba(255, 255, 255, 1);
+  button.grommetux-button.grommetux-article__control {
+    top: calc(21% + 36px);
+    
+    .grommetux-button__icon .grommetux-control-icon {
+      stroke: #bbb;
+      fill: #bbb;
 
       &:hover {
-        color: rgba(255, 255, 255, 1);
+        stroke: #666;
+        fill: #666;
       }
     }
 
-    div.grommetux-hero {
-      width: 100vw;
-      height: 44vh;
+    @media screen and (max-width: 44.9376em) { // video as first slide style... but might want to keep
+      height: 52px;
+      top: calc(21% + 21px);
+    }
+  }
+
+  div.text-wrap {
+    height: 42vh;
+    color: rgba(255, 255, 255, 1);
+
+    &:hover {
+      color: rgba(255, 255, 255, 1);
     }
 
-    .slide {
-      height: 44vh;
+    @media screen and (max-width: 44.9376em) { // video as first slide style
+      height: auto;
     }
+  }
+
+  div.grommetux-hero {
+    width: 100vw;
+    height: 42vh;
+
+    @media screen and (max-width: 44.9376em) { // video as first slide styles
+      .grommetux-hero__background {
+        height: 30vh !important;
+      }
+
+      .grommetux-hero__foreground {
+        .hero-text-wrap {
+          align-items: center;
+
+          & > * {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .slide {
+    height: 42vh;
   }
 }

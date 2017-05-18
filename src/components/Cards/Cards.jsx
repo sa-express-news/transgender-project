@@ -12,8 +12,6 @@ import Animate from 'grommet/components/Animate';
 import Heading from 'grommet/components/Heading';
 import MusicIcon from 'grommet/components/icons/base/Music';
 
-const space = ' ';
-
 let currentTransition = null;
 let currentTimeout = null;
 
@@ -45,7 +43,7 @@ class Cards extends Component {
   }
 
   setPhotoTransitionInterval(idx) {
-    currentTransition = window.setInterval(this.props.transitionPhotos.bind(this, idx), 2000);
+    currentTransition = window.setInterval(this.props.transitionPhotos.bind(this, idx), 3000);
   }
 
   setAudioTimeout(idx) {

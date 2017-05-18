@@ -13,7 +13,7 @@ var getClientEnvironment = require('./env');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
-var publicPath = paths.servedPath;
+var publicPath = 'http://transgender.expressnews.com.s3-website-us-east-1.amazonaws.com/';
 // Some apps do not use client-side routing with pushState.
 // For these, "homepage" can be set to "." to enable relative asset paths.
 var shouldUseRelativeAssetPaths = publicPath === './';
@@ -149,10 +149,9 @@ module.exports = {
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
       // Sass, son
-      {
+      {  
         test: /\.scss$/,
-        include: paths.appSrc,
-        loader: ExtractTextPlugin.extract("style", "css!sass")
+        loader: 'style!css!sass?outputStyle=compressed'
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.

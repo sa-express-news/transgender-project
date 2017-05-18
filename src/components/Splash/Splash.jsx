@@ -15,39 +15,6 @@ import './Splash.scss';
 const vidSrc = require('../../videos/overview.mp4');
 const poster = require('../../images/video-poster.jpg');
 
-const Splash = props => {
-  return (
-    <Article 
-      scrollStep={true}
-      direction="row"
-      controls={props.navIsVisible}
-      className="Splash"
-    >
-      <Section 
-        pad="none"
-        justify="center"
-        align="center"
-        colorIndex="grey-1"
-        full="horizontal"
-        className="slide"
-        key='video'
-      >
-        <Video 
-          full={true}
-          fit="cover"
-          poster={poster}
-        >
-          <source 
-            src={vidSrc}
-            type="video/mp4"
-          />
-        </Video>
-      </Section>
-      {_.map(props.stories, buildArticleSection)}
-    </Article>
-  );
-};
-
 const buildArticleSection = (story, key) => (
   <Section 
     pad="none"
@@ -68,6 +35,7 @@ const buildArticleSection = (story, key) => (
       }
       backgroundColorIndex="dark"
       size="large"
+      flush={false}
     >
       <Box 
         direction="row"
@@ -83,6 +51,7 @@ const buildArticleSection = (story, key) => (
             horizontal: 'large',
             vertical: 'small'
           }}
+          className="hero-text-wrap"
         >
           <Heading
             margin="none"
@@ -111,6 +80,39 @@ const buildArticleSection = (story, key) => (
   </Section>
 );
 
+const Splash = props => {
+  return (
+    <Article 
+      scrollStep={true}
+      direction="row"
+      controls={props.navIsVisible}
+      className="Splash"
+    >
+      <Section 
+        pad="none"
+        justify="center"
+        align="center"
+        colorIndex="grey-1"
+        full="horizontal"
+        className="slide"
+        key='video'
+      >
+        <Video 
+          full={true}
+          fit="contain"
+          poster={poster}
+        >
+          <source 
+            src={vidSrc}
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+      {_.map(props.stories, buildArticleSection)}
+    </Article>
+  );
+};
+
 Splash.propTypes = {
   stories: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
@@ -123,6 +125,7 @@ Splash.propTypes = {
     bgImg: PropTypes.string.isRequired,
   }).isRequired).isRequired,
   navIsVisible: PropTypes.bool.isRequired,
+  isSmallScreen: PropTypes.bool.isRequired,
 };
 
 export default Splash;

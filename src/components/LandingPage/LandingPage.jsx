@@ -83,6 +83,7 @@ class LandingPageContainer extends Component {
         <Splash 
           stories={this.props.stories}
           navIsVisible={this.state.navIsVisible}
+          isSmallScreen={this.state.isSmallScreen}
         />
         <SubNav />
         <Cards 

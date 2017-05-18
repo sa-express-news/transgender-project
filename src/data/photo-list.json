@@ -1,18 +1,18 @@
 [
 	{
-		"name": "Adam Snow",
-		"photos": ["adam-one", "adam-two", "adam-three", "adam-four"],
-		"displayed": 0,
-		"path": "adam",
-		"audio": "adam.mp3",
-		"storyUrls": []
-	},
-	{
 		"name": "Jackson Farner",
 		"photos": ["jackson-one", "jackson-two", "jackson-three"],
 		"displayed": 0,
 		"path": "jackson",
 		"audio": "jackson.mp3",
+		"storyUrls": []
+	},
+	{
+		"name": "Adam Snow",
+		"photos": ["adam-one", "adam-two", "adam-three", "adam-four"],
+		"displayed": 0,
+		"path": "adam",
+		"audio": "adam.mp3",
 		"storyUrls": []
 	},
 	{
