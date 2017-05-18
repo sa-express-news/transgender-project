@@ -1,6 +1,8 @@
-article.Splash, article.Splash > div {
+article.Splash, article.Splash > div, article.Splash section {
   overflow-y: hidden !important;
+}
 
+article.Splash {
   .grommetux-button .grommetux-button__icon .grommetux-control-icon {
     stroke: #bbb;
     fill: #bbb;
@@ -15,7 +17,7 @@ article.Splash, article.Splash > div {
     height: 40vh;
 
     button.grommetux-button.grommetux-article__control {
-      top: 21%;
+      top: calc(20% + 36px);
     }
 
     div.text-wrap {
