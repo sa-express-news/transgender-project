@@ -6,7 +6,7 @@ import Box from 'grommet/components/Box';
 import Heading from 'grommet/components/Heading';
 
 const blurb = 'The San Antonio Express-News spent the last year following transgender San Antonians, documenting their transitions and their fight for rights.';
-const instructions = 'Rollover the images below for audio, click for full bio.';
+const instructions = 'Rollover the images below for audio, click for full bios.';
 
 export default props => {
 	return (

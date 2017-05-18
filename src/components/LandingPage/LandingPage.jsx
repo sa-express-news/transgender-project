@@ -75,12 +75,11 @@ class LandingPageContainer extends Component {
   render() {
     return (
       <div className="content-wrapper">
-        <ReactVisibilitySensor onChange={this.isNavVisible.bind(this)}>
-          <NavBar 
-            className="NavBar"
-            isSmallScreen={this.state.isSmallScreen}
-          />
-        </ReactVisibilitySensor>
+        <NavBar 
+          className="NavBar"
+          isSmallScreen={this.state.isSmallScreen}
+        />
+        <ReactVisibilitySensor onChange={this.isNavVisible.bind(this)} />
         <Splash 
           stories={this.props.stories}
           navIsVisible={this.state.navIsVisible}
