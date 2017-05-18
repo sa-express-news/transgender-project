@@ -1,49 +1,94 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
-import Header from 'grommet/components/Header';
-import Title from 'grommet/components/Title';
-import Box from 'grommet/components/Box';
+import _ from 'lodash';
+import ReactVisibilitySensor from 'react-visibility-sensor';
 
 import store from '../../store';
 import actions from '../../actions';
 
-import Splash from '../Splash/Splash';
+import './LandingPage.scss';
 
-const header = () => (
-  <Header 
-    fixed={true}
-    splash={false}
-  >
-    <Title>Life In Transition</Title>
-    <Box flex={true}
-      justify='end'
-      direction='row'
-      responsive={false}
-    />
-  </Header>
-)
+import NavBar from '../NavBar/NavBar';
+import Splash from '../Splash/Splash';
+import SubNav from '../SubNav/SubNav';
+import Cards from '../Cards/Cards';
+
 
 class LandingPageContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      photos: [],
+      isSmallScreen: true,
+      navIsVisible: true,
+    };
+    this.setIsMobile      = this.setIsMobile.bind(this);
+    this.transitionPhotos = this.transitionPhotos.bind(this);
   }
 
   componentDidMount() {
     this.getData();
+    this.setIsMobile();
+    window.addEventListener("resize", this.setIsMobile);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.setIsMobile);
   }
 
   getData() {
-    store.dispatch(actions.story.getStories());
+    Promise.all([
+      store.dispatch(actions.story.getStories()),
+      store.dispatch(actions.photo.getPhotos())
+    ]).then(payload => this.setState({ photos: payload[1].photos }));
+  }
+
+  setIsMobile() {
+    const isSmallScreen = window.innerWidth < 900;
+    if (isSmallScreen !== this.state.isSmallScreen) {
+      this.setState({ isSmallScreen });
+    }
+  }
+
+  transitionPhotos(idx, isReset = false) {
+    if (!this.state.photos.length) return;
+    
+    const { photos } = this.state,
+          currPhoto  = photos[idx].displayed,
+          lastPhoto  = photos[idx].photos.length - 1;
+
+    if (isReset || currPhoto === lastPhoto) {
+      photos[idx].displayed = 0;
+    } else {
+      photos[idx].displayed += 1;
+    }
+
+    this.setState({ photos });
+  }
+
+  isNavVisible(navIsVisible) {
+    if (navIsVisible !== this.state.navIsVisible) {
+      this.setState({ navIsVisible });
+    }
   }
 
   render() {
     return (
-      <div>
+      <div className="content-wrapper">
+        <ReactVisibilitySensor onChange={this.isNavVisible.bind(this)}>
+          <NavBar 
+            className="NavBar"
+            isSmallScreen={this.state.isSmallScreen}
+          />
+        </ReactVisibilitySensor>
         <Splash 
           stories={this.props.stories}
-          className="Splash"
+          navIsVisible={this.state.navIsVisible}
+        />
+        <SubNav />
+        <Cards 
+          photos={this.state.photos}
+          transitionPhotos={this.transitionPhotos}
         />
       </div>
     );

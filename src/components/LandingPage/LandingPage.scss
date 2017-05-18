@@ -1,0 +1,24 @@
+$background: #000001;
+$red: rgba(255, 25, 57, 1);
+
+.content-wrapper {
+	background-color: $background;
+	overflow: hidden;
+
+	.infobox {
+		&:before, &:after {
+		  content: "";
+		  width: 100%;
+		  max-width: 5em;
+		  height: 0.3em;
+		  background-color: $red;
+		  display: block;
+		  margin: 20px auto 2px;
+		}
+
+		&:after {
+		  background-color: white;
+		  margin: auto;
+		}
+	}
+}

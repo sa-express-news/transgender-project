@@ -1,0 +1,26 @@
+header.NavBar {
+	position: absolute;
+	z-index: 1000;
+
+	div.share-btn-wrap {
+		button span {
+			padding-top: 6px;
+		}
+	}
+
+	svg.grommetux-control-icon {
+		width: 38px;
+		height: 38px;
+
+		&.share-btn {
+			width: 24px;
+			height: 24px;
+			padding-left: 6px;
+		}
+
+		&:hover {
+			fill: white;
+			stroke: white;
+		}
+	}
+}

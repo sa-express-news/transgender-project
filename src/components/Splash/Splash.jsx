@@ -8,7 +8,6 @@ import Hero from 'grommet/components/Hero';
 import Box from 'grommet/components/Box';
 import Image from 'grommet/components/Image';
 import Video from 'grommet/components/Video';
-import Headline from 'grommet/components/Headline';
 import Heading from 'grommet/components/Heading';
 
 import './Splash.scss';
@@ -52,21 +51,21 @@ const buildArticleSection = (story, key) => (
             vertical: 'small'
           }}
         >
-          <Headline
+          <Heading
             margin="none"
             align="start"
-            size="large"
             strong={true}
           >
             {story.title}
-          </Headline>
+          </Heading>
           <Heading
-            margin="medium"
+            margin="none"
             align="start"
-            tag="h2"
+            tag="h3"
           >
             {story.excerpt}
           </Heading>
+          <Box pad={{ vertical: 'large' }} />
         </Box>
         <Box 
           basis="2/3"
@@ -83,8 +82,8 @@ const Splash = props => {
     <Article 
       scrollStep={true}
       direction="row"
-      controls={true}
-      className="splash"
+      controls={props.navIsVisible}
+      className="Splash"
     >
       {buildArticleSection(props.stories[0], 'lead')}
       <Section 
@@ -97,7 +96,7 @@ const Splash = props => {
         key='video'
       >
         <Video 
-          full={false}
+          full={true}
           fit="cover"
           poster={poster}
         >
@@ -125,6 +124,7 @@ Splash.propTypes = {
     slug: PropTypes.string.isRequired,
     bgImg: PropTypes.string.isRequired,
   }).isRequired).isRequired,
+  navIsVisible: PropTypes.bool.isRequired,
 };
 
 export default Splash;

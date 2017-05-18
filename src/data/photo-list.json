@@ -1,0 +1,79 @@
+[
+	{
+		"name": "Adam Snow",
+		"photos": ["adam-one", "adam-two", "adam-three", "adam-four"],
+		"displayed": 0,
+		"path": "adam",
+		"audio": "adam.mp3",
+		"storyUrls": []
+	},
+	{
+		"name": "Jackson Farner",
+		"photos": ["jackson-one", "jackson-two", "jackson-three"],
+		"displayed": 0,
+		"path": "jackson",
+		"audio": "jackson.mp3",
+		"storyUrls": []
+	},
+	{
+		"name": "Sasha Woollven",
+		"photos": ["sasha-one", "sasha-two", "sasha-three"],
+		"displayed": 0,
+		"path": "sasha",
+		"audio": "sasha.mp3",
+		"storyUrls": []
+	},
+	{
+		"name": "Catizia Farris",
+		"photos": ["catizia-one", "catizia-two", "catizia-three"],
+		"displayed": 0,
+		"path": "catizia",
+		"storyUrls": []
+	},
+	{
+		"name": "Mason & Belinda",
+		"photos": ["mason-belinda-one", "mason-belinda-two", "mason-belinda-three", "mason-belinda-four"],
+		"displayed": 0,
+		"path": "mason-belinda",
+		"audio": "mason-belinda.mp3",
+		"storyUrls": []
+	},
+	{
+		"name": "Jaime Merkert",
+		"photos": ["jaime-one", "jaime-two", "jaime-three"],
+		"displayed": 0,
+		"path": "jaime",
+		"storyUrls": []
+	},
+	{
+		"name": "Treci Vale",
+		"photos": ["treci-one", "treci-two", "treci-three"],
+		"displayed": 0,
+		"path": "treci",
+		"audio": "treci.mp3",
+		"storyUrls": []
+	},
+	{
+		"name": "Will",
+		"photos": ["will-one"],
+		"displayed": 0,
+		"path": "will",
+		"audio": "will.mp3",
+		"storyUrls": []
+	},
+	{
+		"name": "Ashleigh Brown",
+		"photos": ["ashleigh-one", "ashleigh-two"],
+		"displayed": 0,
+		"path": "ashleigh",
+		"audio": "ashleigh.mp3",
+		"storyUrls": []
+	},
+	{
+		"name": "Lauryn Farris",
+		"photos": ["lauryn-one", "lauryn-two", "lauryn-three"],
+		"displayed": 0,
+		"path": "lauryn",
+		"storyUrls": []
+	}
+]

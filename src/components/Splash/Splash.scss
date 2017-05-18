@@ -1,4 +1,6 @@
-article.splash {
+article.Splash, article.Splash > div {
+  overflow-y: hidden !important;
+
   .grommetux-button .grommetux-button__icon .grommetux-control-icon {
     stroke: #bbb;
     fill: #bbb;
@@ -8,25 +10,31 @@ article.splash {
       fill: #666;
     }
   }
-  
+
   @media screen and (min-width: 44.9376em) {
-    height: 80vh;
+    height: 60vh;
 
     button.grommetux-button.grommetux-article__control {
-      top: 40%;
+      top: 30%;
     }
 
     div.text-wrap {
-      height: 80vh;
+      height: 60vh;
     }
 
     div.grommetux-hero {
       width: 100vw;
-      height: 80vh;
+      height: 60vh;
     }
 
     .slide {
-      height: 80vh;
+      height: 60vh;
+    }
+  }
+
+  @media screen and (max-width: 44.9376em) {
+    button.grommetux-button.grommetux-article__control {
+      position: absolute;
     }
   }
 }
