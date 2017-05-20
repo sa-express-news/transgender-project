@@ -2,18 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
-import Article from 'grommet/components/Article';
 import Section from 'grommet/components/Section';
 import Hero from 'grommet/components/Hero';
 import Box from 'grommet/components/Box';
 import Image from 'grommet/components/Image';
 import Video from 'grommet/components/Video';
 import Heading from 'grommet/components/Heading';
+import Anchor from 'grommet/components/Anchor';
+
+import Article from './Article';
 
 import './Splash.scss';
 
 const vidSrc = require('../../videos/overview.mp4');
 const poster = require('../../images/video-poster.jpg');
+
+const buildArticleUrl = slug => `http://projects.expressnews.com/${slug}`;
 
 const buildArticleSection = (story, key) => (
   <Section 
@@ -25,58 +29,66 @@ const buildArticleSection = (story, key) => (
     className="slide"
     key={key}
   >
-    <Hero 
-      background={
-        <Image 
-          src={story.bgImg}
-          fit="cover"
-          full={true} 
-        />
-      }
-      backgroundColorIndex="dark"
-      size="large"
-      flush={false}
+    <Anchor
+      href={buildArticleUrl(story.slug)}
+      target="_blank"
     >
-      <Box 
-        direction="row"
-        justify="start"
-        align="end"
-        className="text-wrap"
+      <Hero 
+        background={
+          <Image 
+            src={story.bgImg}
+            fit="cover"
+            full={true} 
+          />
+        }
+        backgroundColorIndex="dark"
+        size="large"
+        flush={false}
       >
-        <Box
-          basis="1/3"
-          justify="start"
-          align="start"
-          pad={{
-            horizontal: 'large',
-            vertical: 'small'
-          }}
-          className="hero-text-wrap"
-        >
-          <Heading
-            margin="none"
-            align="start"
-            tag="h2"
-            strong={true}
-          >
-            {story.title}
-          </Heading>
-          <Heading
-            margin="none"
-            align="start"
-            tag="h3"
-          >
-            {story.excerpt}
-          </Heading>
-          <Box pad={{ vertical: 'large' }} />
-        </Box>
         <Box 
-          basis="2/3"
+          direction="row"
+          justify="start"
           align="end"
-          pad="medium"
-        />
-      </Box>
-    </Hero>
+          className="text-wrap"
+        >
+          <Box
+            basis="1/3"
+            justify="start"
+            align="start"
+            pad={{
+              horizontal: 'large',
+              vertical: 'small'
+            }}
+            className="hero-text-wrap"
+          >
+            <Heading
+              margin="none"
+              align="start"
+              pad={{
+                horizontal: 'large'
+              }}
+              tag="h2"
+              strong={true}
+            >
+              {story.title}
+            </Heading>
+            <Heading
+              margin="none"
+              align="start"
+              tag="h3"
+            >
+              {story.excerpt}
+            </Heading>
+            <Box pad={{ vertical: 'large' }} />
+          </Box>
+          <Box 
+            basis="2/3"
+            align="end"
+            pad="medium"
+          />
+        </Box>
+      </Hero>
+    </Anchor>
   </Section>
 );
 

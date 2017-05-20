@@ -20,7 +20,7 @@ class LandingPageContainer extends Component {
     this.state = {
       photos: [],
       isSmallScreen: true,
-      navIsVisible: true,
+      navIsVisible: false,
     };
     this.setIsMobile      = this.setIsMobile.bind(this);
     this.transitionPhotos = this.transitionPhotos.bind(this);
@@ -39,8 +39,9 @@ class LandingPageContainer extends Component {
   getData() {
     Promise.all([
       store.dispatch(actions.story.getStories()),
+      store.dispatch(actions.navCopy.getNavCopy()),
       store.dispatch(actions.photo.getPhotos())
-    ]).then(payload => this.setState({ photos: payload[1].photos }));
+    ]).then(payload => this.setState({ photos: payload[2].photos }));
   }
 
   setIsMobile() {
@@ -85,10 +86,14 @@ class LandingPageContainer extends Component {
           navIsVisible={this.state.navIsVisible}
           isSmallScreen={this.state.isSmallScreen}
         />
-        <SubNav />
+        <SubNav copy={this.props.navCopy.introduction} />
         <Cards 
           photos={this.state.photos}
           transitionPhotos={this.transitionPhotos}
+        />
+        <SubNav
+          copy={this.props.navCopy.credits}
+          title="Credits"
         />
       </div>
     );
@@ -98,6 +103,7 @@ class LandingPageContainer extends Component {
 const mapStateToProps = store => {
   return { 
     stories: store.stories,
+    navCopy: store.navCopy,
   }
 };
 export default connect(mapStateToProps)(LandingPageContainer);

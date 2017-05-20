@@ -1,11 +1,11 @@
 import React from 'react';
+import LandingPage from '../LandingPage/LandingPage';
 import './App.scss';
 
 export default function(props) {
-	console.log(props)
   return (
     <div className="App">
-      {props.children}
+      <LandingPage />
     </div>
   );
 }

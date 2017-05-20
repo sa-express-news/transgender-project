@@ -1,12 +1,14 @@
 import React from 'react';
+import _ from 'lodash';
 
 import './SubNav.scss';
 
 import Box from 'grommet/components/Box';
 import Heading from 'grommet/components/Heading';
 
-const blurb = 'The San Antonio Express-News spent the last year following transgender San Antonians, documenting their transitions and their fight for rights.';
-const instructions = 'Rollover the images below for audio, click for full bios.';
+const addTitle = title => (
+  <Heading align="center" tag="h2" margin="none">{title}</Heading>
+);
 
 export default props => {
 	return (
@@ -20,12 +22,15 @@ export default props => {
         pad="none"
         className="infobox"
       >
+        {props.title && addTitle(props.title)}
         <Heading 
           align="center"
           tag="h3"
           margin="small"
         >
-          {blurb}<br />{instructions}
+          {_.map(props.copy, (paragraph, idx) => (
+            <span>{paragraph}<br /></span>
+          ))}
         </Heading>
       </Box>
     </Box>

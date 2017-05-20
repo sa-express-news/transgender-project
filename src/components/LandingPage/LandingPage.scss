@@ -1,9 +1,19 @@
 $background: #000001;
 $red: rgba(255, 25, 57, 1);
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 .content-wrapper {
 	background-color: $background;
 	overflow: hidden;
+	padding-bottom: 60px;
 
 	.infobox {
 		&:before, &:after {

@@ -27,16 +27,18 @@ const buildSocialButton = (href, icon) => {
   );
 };
 
+const storyLink = 'http://www.expressnews.com/transgender-life-in-transition/';
+
 const buildAllSocialButtons = () => (
   <div>
     {buildSocialButton(
       'http://www.expressnews.com/',
       (<ENLogo className="en-logo" />)
     )}
-    <SocialShare type='twitter' link='https://grommet.io' />
-    <SocialShare type='facebook' link='https://grommet.io' />
+    <SocialShare type='twitter' link={storyLink} />
+    <SocialShare type='facebook' link={storyLink} />
     {buildSocialButton(
-      '//www.reddit.com/submit?url=http://www.expressnews.com/transgender-life-in-transition/',
+      `//www.reddit.com/submit?url=${storyLink}`,
       (<SocialReddit />)
     )}
   </div>

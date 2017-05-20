@@ -28,10 +28,10 @@
 		"photos": ["catizia-one", "catizia-two", "catizia-three"],
 		"displayed": 0,
 		"path": "catizia",
-		"storyUrls": []
+		"storyUrls": ["http://projects.expressnews.com/part-1-the-battle"]
 	},
 	{
-		"name": "Mason & Belinda",
+		"name": "Mason Cantu & Belinda Trevino",
 		"photos": ["mason-belinda-one", "mason-belinda-two", "mason-belinda-three", "mason-belinda-four"],
 		"displayed": 0,
 		"path": "mason-belinda",
@@ -74,6 +74,6 @@
 		"photos": ["lauryn-one", "lauryn-two", "lauryn-three"],
 		"displayed": 0,
 		"path": "lauryn",
-		"storyUrls": []
+		"storyUrls": ["http://projects.expressnews.com/part-1-the-battle"]
 	}
 ]
