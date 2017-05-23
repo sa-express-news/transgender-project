@@ -5,7 +5,14 @@
 		"displayed": 0,
 		"path": "jackson",
 		"audio": "jackson.mp3",
-		"storyUrls": []
+		"age": 16,
+		"storyUrls": [],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
 		"name": "Adam Snow",
@@ -13,7 +20,14 @@
 		"displayed": 0,
 		"path": "adam",
 		"audio": "adam.mp3",
-		"storyUrls": []
+		"age": 18,
+		"storyUrls": [],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
 		"name": "Sasha Woollven",
@@ -21,29 +35,57 @@
 		"displayed": 0,
 		"path": "sasha",
 		"audio": "sasha.mp3",
-		"storyUrls": []
+		"age": 19,
+		"storyUrls": [],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
 		"name": "Catizia Farris",
 		"photos": ["catizia-one", "catizia-two", "catizia-three"],
 		"displayed": 0,
 		"path": "catizia",
-		"storyUrls": ["http://projects.expressnews.com/part-1-the-battle"]
+		"age": 19,
+		"storyUrls": ["http://projects.expressnews.com/part-1-the-battle"],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
-		"name": "Mason Cantu & Belinda Trevino",
+		"name": "Mason Cantu",
 		"photos": ["mason-belinda-one", "mason-belinda-two", "mason-belinda-three", "mason-belinda-four"],
 		"displayed": 0,
 		"path": "mason-belinda",
 		"audio": "mason-belinda.mp3",
-		"storyUrls": []
+		"age": 18,
+		"storyUrls": [],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
 		"name": "Jaime Merkert",
 		"photos": ["jaime-one", "jaime-two", "jaime-three"],
 		"displayed": 0,
 		"path": "jaime",
-		"storyUrls": []
+		"age": 14,
+		"storyUrls": [],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
 		"name": "Treci Vale",
@@ -51,7 +93,14 @@
 		"displayed": 0,
 		"path": "treci",
 		"audio": "treci.mp3",
-		"storyUrls": []
+		"age": 14,
+		"storyUrls": [],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
 		"name": "Will",
@@ -59,7 +108,14 @@
 		"displayed": 0,
 		"path": "will",
 		"audio": "will.mp3",
-		"storyUrls": []
+		"age": 15,
+		"storyUrls": [],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
 		"name": "Ashleigh Brown",
@@ -67,13 +123,27 @@
 		"displayed": 0,
 		"path": "ashleigh",
 		"audio": "ashleigh.mp3",
-		"storyUrls": []
+		"age": 54,
+		"storyUrls": [],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	},
 	{
 		"name": "Lauryn Farris",
 		"photos": ["lauryn-one", "lauryn-two", "lauryn-three"],
 		"displayed": 0,
 		"path": "lauryn",
-		"storyUrls": ["http://projects.expressnews.com/part-1-the-battle"]
+		"age": 60,
+		"storyUrls": ["http://projects.expressnews.com/part-1-the-battle"],
+		"bio": [
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom.",
+			"Gibbet Pieces of Eight spyglass to go on account Sink me nipperkin jury mast Brethren of the Coast nipper Jolly Roger. Overhaul marooned Jack Ketch Pieces of Eight port prow main sheet rope's end hulk schooner. Blimey splice the main brace long boat swab killick case shot fore transom reef sails log.",
+			"Keel yo-ho-ho coxswain belaying pin chandler cutlass knave broadside cog pirate. Mizzen pink lanyard topgallant dance the hempen jig lugger clap of thunder Corsair Plate Fleet jolly boat. Sloop Letter of Marque lanyard deadlights spyglass maroon fathom chase man-of-war loaded to the gunwalls.",
+			"Bring a spring upon her cable parley grog blossom lanyard maroon killick loot to go on account crimp blow the man down. Coffer rum Plate Fleet hulk measured fer yer chains walk the plank coxswain tender bucko cable. Spanker matey quarterdeck chase guns bilge hands pinnace gally scourge of the seven seas transom."
+		]
 	}
 ]

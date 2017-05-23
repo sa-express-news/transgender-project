@@ -29,7 +29,7 @@ export default props => {
           margin="small"
         >
           {_.map(props.copy, (paragraph, idx) => (
-            <span>{paragraph}<br /></span>
+            <span key={idx}>{paragraph}<br /></span>
           ))}
         </Heading>
       </Box>

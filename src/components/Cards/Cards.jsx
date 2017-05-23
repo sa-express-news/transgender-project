@@ -91,7 +91,7 @@ class Cards extends Component {
   }
 
   render() {
-    const { photos } = this.props;
+    const { photos, setBio } = this.props;
     return (
       <Article 
         full="horizontal"
@@ -102,6 +102,7 @@ class Cards extends Component {
             <Tile 
               key={key}
               className="profile"
+              onClick={setBio.bind(null, subject)}
             >
               {_.map(subject.photos, (photo, idx) => (
                 <div key={idx}>
@@ -121,7 +122,7 @@ class Cards extends Component {
                 </div>
               ))}
               <Heading tag="h3">
-                {subject.name}
+                {subject.name}, {subject.age}
                 {subject.audio && (
                   <MusicIcon
                     size="xsmall"
@@ -153,6 +154,7 @@ Cards.propTypes = {
     excerpt: PropTypes.string,
     slug: PropTypes.string,
   }).isRequired).isRequired,
+  setBio: PropTypes.func.isRequired,
 };
 
 export default Cards;

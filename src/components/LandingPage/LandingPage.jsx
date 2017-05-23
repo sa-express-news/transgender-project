@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import _ from 'lodash';
+import PropTypes from 'prop-types';
 import ReactVisibilitySensor from 'react-visibility-sensor';
-
-import store from '../../store';
-import actions from '../../actions';
 
 import './LandingPage.scss';
 
@@ -14,7 +10,7 @@ import SubNav from '../SubNav/SubNav';
 import Cards from '../Cards/Cards';
 
 
-class LandingPageContainer extends Component {
+class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,7 +23,6 @@ class LandingPageContainer extends Component {
   }
 
   componentDidMount() {
-    this.getData();
     this.setIsMobile();
     window.addEventListener("resize", this.setIsMobile);
   }
@@ -36,12 +31,11 @@ class LandingPageContainer extends Component {
     window.removeEventListener("resize", this.setIsMobile);
   }
 
-  getData() {
-    Promise.all([
-      store.dispatch(actions.story.getStories()),
-      store.dispatch(actions.navCopy.getNavCopy()),
-      store.dispatch(actions.photo.getPhotos())
-    ]).then(payload => this.setState({ photos: payload[2].photos }));
+  componentWillReceiveProps(nextProps) {
+    const { photos } = nextProps;
+    if (photos.length !== this.props.photos.length) {
+      this.setState({ photos });
+    }
   }
 
   setIsMobile() {
@@ -90,6 +84,7 @@ class LandingPageContainer extends Component {
         <Cards 
           photos={this.state.photos}
           transitionPhotos={this.transitionPhotos}
+          setBio={this.props.setBio}
         />
         <SubNav
           copy={this.props.navCopy.credits}
@@ -100,10 +95,8 @@ class LandingPageContainer extends Component {
   }
 }
 
-const mapStateToProps = store => {
-  return { 
-    stories: store.stories,
-    navCopy: store.navCopy,
-  }
+LandingPage.propTypes = {
+  setBio: PropTypes.func.isRequired,
 };
-export default connect(mapStateToProps)(LandingPageContainer);
+
+export default LandingPage;

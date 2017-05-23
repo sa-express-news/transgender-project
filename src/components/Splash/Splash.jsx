@@ -64,9 +64,6 @@ const buildArticleSection = (story, key) => (
             <Heading
               margin="none"
               align="start"
-              pad={{
-                horizontal: 'large'
-              }}
               tag="h2"
               strong={true}
             >
