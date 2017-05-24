@@ -520,7 +520,7 @@ export default class Article extends Component {
 
   _renderControls () {
     const { direction } = this.props;
-    const { atBottom, narrow, selectedIndex } = this.state;
+    const { selectedIndex } = this.state;
     const CONTROL_CLASS_PREFIX =
       `${CLASS_ROOT}__control ${CLASS_ROOT}__control`;
     const childCount = React.Children.count(this.props.children);

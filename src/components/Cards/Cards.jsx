@@ -34,6 +34,11 @@ class Cards extends Component {
     return require(`../../audio/${file}`);
   }
 
+  setBio(subject, idx) {
+    this.clearAllTimers(idx);
+    this.props.setBio(subject);
+  }
+
   clearPhotoTransitionInterval() {
     window.clearInterval(currentTransition);
   }
@@ -80,6 +85,10 @@ class Cards extends Component {
   }
 
   onPhotoMouseLeave(idx) {
+    this.clearAllTimers(idx);
+  }
+
+  clearAllTimers(idx) {
     this.clearPhotoTransitionInterval();
     this.clearAudioTimeout();
     this.resetPhotos(idx);
@@ -91,7 +100,7 @@ class Cards extends Component {
   }
 
   render() {
-    const { photos, setBio } = this.props;
+    const { photos } = this.props;
     return (
       <Article 
         full="horizontal"
@@ -102,7 +111,7 @@ class Cards extends Component {
             <Tile 
               key={key}
               className="profile"
-              onClick={setBio.bind(null, subject)}
+              onClick={this.setBio.bind(this, subject, key)}
             >
               {_.map(subject.photos, (photo, idx) => (
                 <div key={idx}>
