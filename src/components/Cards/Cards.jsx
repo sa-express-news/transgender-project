@@ -100,7 +100,7 @@ class Cards extends Component {
   }
 
   render() {
-    const { photos } = this.props;
+    const { photos, isSmallScreen } = this.props;
     return (
       <Article 
         full="horizontal"
@@ -124,15 +124,17 @@ class Cards extends Component {
                       />
                     </Animate>
                   }
-                  <Image 
-                    src={this.buildImgPath(subject.path, photo)}
-                    className="hide"
-                  />
+                  {!this.getVisibility(subject, idx) &&
+                    <Image 
+                      src={this.buildImgPath(subject.path, photo)}
+                      className="hide"
+                    />
+                  }
                 </div>
               ))}
               <Heading tag="h3">
                 {subject.name}, {subject.age}
-                {subject.audio && (
+                {subject.audio && !isSmallScreen && (
                   <MusicIcon
                     size="xsmall"
                     colorIndex="light-1"
@@ -157,13 +159,13 @@ Cards.propTypes = {
     name: PropTypes.string.isRequired,
     photos: PropTypes.array.isRequired,
     path: PropTypes.string.isRequired,
-    storyUrls: PropTypes.array.isRequired,
+    stories: PropTypes.array.isRequired,
+    age: PropTypes.number.isRequired,
     audio: PropTypes.string,
-    title: PropTypes.string,
-    excerpt: PropTypes.string,
-    slug: PropTypes.string,
+    video: PropTypes.string,
   }).isRequired).isRequired,
   setBio: PropTypes.func.isRequired,
+  isSmallScreen: PropTypes.bool.isRequired,
 };
 
 export default Cards;

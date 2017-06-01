@@ -23,7 +23,9 @@ class LandingPage extends Component {
   }
 
   componentDidMount() {
+    const { photos } = this.props;
     this.setIsMobile();
+    if (photos.length) { this.addPhotosToState(photos); }
     window.addEventListener("resize", this.setIsMobile);
   }
   
@@ -33,9 +35,11 @@ class LandingPage extends Component {
 
   componentWillReceiveProps(nextProps) {
     const { photos } = nextProps;
-    if (photos.length !== this.props.photos.length) {
-      this.setState({ photos });
-    }
+    this.addPhotosToState(photos);
+  }
+
+  addPhotosToState(photos) {
+    this.setState({ photos });
   }
 
   setIsMobile() {
@@ -85,6 +89,7 @@ class LandingPage extends Component {
           photos={this.state.photos}
           transitionPhotos={this.transitionPhotos}
           setBio={this.props.setBio}
+          isSmallScreen={this.state.isSmallScreen}
         />
         <SubNav
           copy={this.props.navCopy.credits}

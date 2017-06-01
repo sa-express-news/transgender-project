@@ -1,0 +1,24 @@
+$red: rgba(255, 25, 57, 1);
+
+.Bio {
+	img.hide {
+		display: none;
+	}
+
+	.article-table {
+		font-size: 24px;
+		max-width: 576px;
+
+		th {
+			color: $red;
+		}
+
+		th, td, th:first-child, td:first-child, th:last-child, td:last-child {
+			padding-left: 0;
+		}
+	}
+
+	.video-block {
+		margin-top: 15px;
+	}
+}

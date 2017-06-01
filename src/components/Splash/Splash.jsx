@@ -97,6 +97,7 @@ const Splash = props => {
       controls={props.navIsVisible}
       className="Splash"
     >
+      {buildArticleSection(props.stories[0], 0)}
       <Section 
         pad="none"
         justify="center"
@@ -117,7 +118,7 @@ const Splash = props => {
           />
         </Video>
       </Section>
-      {_.map(props.stories, buildArticleSection)}
+      {_.map(props.stories.slice(1), buildArticleSection)}
     </Article>
   );
 };

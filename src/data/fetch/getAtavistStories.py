@@ -6,7 +6,7 @@ authUrl = 'https://atavist.com/api/v2/oauth/access_token.php'
 listUrl = 'https://atavist.com/api/v2/project/?fields=title,subtitle,excerpt,cover_partial,byline,slug' # not currently in use
 projectUrl = ['https://atavist.com/api/v2/project/', '/retrieve']
 
-projectIds = ['1254175']
+projectIds = ['1290051', '1254175']
 
 accessToken = ''
 storyList = []

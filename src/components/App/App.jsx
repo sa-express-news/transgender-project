@@ -45,10 +45,7 @@ class App extends Component {
       <div className="App">
         <div className="content-wrapper">
           {bio && (
-            <Bios 
-              bio={bio}
-              setBio={this.setBio}
-            />
+            <Bios bio={bio} setBio={this.setBio} />
           )}
           {!bio && (
             <LandingPage 
