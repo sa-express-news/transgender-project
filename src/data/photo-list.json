@@ -7,7 +7,12 @@
 		"path": "jackson",
 		"audio": "jackson.mp3",
 		"age": 16,
-		"stories": [],
+		"stories": [
+			{
+				"url": "http://www.expressnews.com/news/local/article/Jackson-Farner-12414507.php",
+				"title": "The next generation: Jackson Farmer"
+			}
+		],
 		"bio": [
 			"During his freshman year of high school, Jackson began experiencing gender dysphoria — an intense feeling that he was in the wrong body. \"It’s like this inner voice fighting you, almost,\" Jackson said. \"Every time I would see a guy, I would just compare myself to him, and the ways that I’m not like him or I’d never be like him.\" Worried about his mental health, that school year he first told his friends that he was a boy, and his mom later on.",
 			"Now, a year later, Jackson has made major strides in his transition. He cut off his hair and started seeing a gender therapist. He changed his name to Jackson and started going by male pronouns. In April, he had his first testosterone shot, and this summer he will legally change his name and gender marker. \"The transition is more how to be comfortable with yourself, how to be grateful for what you have versus comparing what you have to other people and naming everything that’s wrong with your life,\" Jackson said. \"It’s just being comfortable in your own skin.\""
@@ -21,7 +26,12 @@
 		"path": "adam",
 		"audio": "adam.mp3",
 		"age": 18,
-		"stories": [],
+		"stories": [
+			{
+				"url": "http://www.expressnews.com/news/local/article/Adam-Snow-12414500.php",
+				"title": "The next generation: Adam Snow"
+			}
+		],
 		"bio": [
 			"For Adam, gender identity and gender expression are distinct from each other. He’s a transgender young man, but he also has created elaborate makeup looks and loves to dye his hair. \"As soon as a trans guy wears makeup, they’d be like, ‘Are you de-transitioning now? Huh? You want to be a girl again?’\" Adam said. \"It’s really annoying because you still have to confine to gender roles either way.\"",
 			"Last year, Adam dropped out of his high school, where he found acceptance from some but was still treated as a girl by others. Since then, he has been waiting until his family has enough money for him to get his GED, start taking hormones and legally change his name and gender marker."
@@ -50,7 +60,11 @@
 		"stories": [
 			{
 				"url": "http://projects.expressnews.com/part-1-the-battle",
-				"title": "Part 1: The Battle"
+				"title": "Part 1: The battle"
+			},
+			{
+				"url": "http://projects.expressnews.com/part-ii-the-mother-and-daughter",
+				"title": "Part 1: The mother and daughter"
 			}
 		],
 		"bio": [
@@ -78,7 +92,12 @@
 		"displayed": 0,
 		"path": "jaime",
 		"age": 14,
-		"stories": [],
+		"stories": [
+			{
+				"url": "http://www.expressnews.com/news/local/article/Jaime-Merkert-12414502.php",
+				"title": "The next generation: Jamie"
+			}
+		],
 		"bio": [
 			"Being transgender in a small town is not the same as it is in a large, diverse city. Jaime lives in Karnes City, where he is homeschooled. Before that, when Jaime attended public school, he was uncomfortable when he saw that girls were expected to wear dresses. \"Why do you want to dress like that?\" he would wonder.",
 			"Jaime has struggled with mental health issues and several suicide attempts, often exacerbated by his gender identity issues. He’s now in treatment, which has helped him to better cope, and recently started hormone therapy. Jaime’s mother works in San Antonio, where he also attends Fiesta Youth, a LGBTQ peer support group. There, Jaime found supportive friends. \"I came to the right place,\" he said."
@@ -106,7 +125,12 @@
 		"path": "will",
 		"audio": "will.mp3",
 		"age": 15,
-		"stories": [],
+		"stories": [
+			{
+				"url": "http://www.expressnews.com/news/local/article/Will-12414508.php",
+				"title": "The next generation: Will"
+			}
+		],
 		"bio": [
 			"Will has been taking testosterone for some time, and he passes so well that most people cannot tell he was assigned female at birth. Some who knew him from elementary school still know him as a girl, while others know him as a boy based on his appearance. But he has felt uncomfortable about formally telling classmates and teachers, worried that his peers would make assumptions about him or think of him differently. \"I’m just not sure what will happen,\" Will said in the fall. \"I guess I’m afraid.\" For that reason, the Express-News is identifying him only by his first name. He decided to come out first at a church where he volunteers, changing his name tag to reflect his new name.",
 			"Sometimes at school, when Will hears others castigating the LGBTQ community, he tries to correct them. \"You should just treat everybody with respect,\" Will said. \"That’s basically what I tell them, because it shouldn’t matter how they want to dress and stuff.\""
@@ -135,7 +159,11 @@
 		"stories": [
 			{
 				"url": "http://projects.expressnews.com/part-1-the-battle",
-				"title": "Part 1: The Battle"
+				"title": "Part 1: The battle"
+			},
+			{
+				"url": "http://projects.expressnews.com/part-ii-the-mother-and-daughter",
+				"title": "Part 1: The mother and daughter"
 			}
 		],
 		"bio": [

@@ -1,12 +1,12 @@
 article.Splash, article.Splash > div, article.Splash section {
-  overflow-y: hidden !important;
+  overflow: hidden !important;
 }
 
 article.Splash {
   height: 42vh;
 
   @media screen and (max-width: 44.9376em) { // video as first slide style
-    height: 66vh;
+    height: 70vh;
   }
 
   button.grommetux-button.grommetux-article__control {
@@ -65,7 +65,7 @@ article.Splash {
   .slide {
     height: 42vh;
     @media screen and (max-width: 44.9376em) { // video as first slide style
-      height: 66vh;
+      height: 70vh;
     }
   }
 }

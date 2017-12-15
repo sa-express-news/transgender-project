@@ -17,8 +17,6 @@ import './Splash.scss';
 const vidSrc = require('../../videos/overview.mp4');
 const poster = require('../../images/video-poster.jpg');
 
-const buildArticleUrl = slug => `http://projects.expressnews.com/${slug}`;
-
 const buildArticleSection = (story, key) => (
   <Section 
     pad="none"
@@ -30,7 +28,7 @@ const buildArticleSection = (story, key) => (
     key={key}
   >
     <Anchor
-      href={buildArticleUrl(story.slug)}
+      href={story.slug}
       target="_blank"
     >
       <Hero 
@@ -97,7 +95,6 @@ const Splash = props => {
       controls={props.navIsVisible}
       className="Splash"
     >
-      {buildArticleSection(props.stories[0], 0)}
       <Section 
         pad="none"
         justify="center"
@@ -118,19 +115,15 @@ const Splash = props => {
           />
         </Video>
       </Section>
-      {_.map(props.stories.slice(1), buildArticleSection)}
+      {_.map(_.reverse(props.stories), buildArticleSection)}
     </Article>
   );
 };
 
 Splash.propTypes = {
   stories: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
-    byline: PropTypes.string.isRequired,
     excerpt: PropTypes.string.isRequired,
-    cover: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
     bgImg: PropTypes.string.isRequired,
   }).isRequired).isRequired,
