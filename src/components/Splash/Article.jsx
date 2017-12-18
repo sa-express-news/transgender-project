@@ -346,6 +346,7 @@ export default class Article extends Component {
       const { children } = this.props;
       const { selectedIndex } = this.state;
       const childCount = React.Children.count(children);
+      console.log(childCount);
       if (event) {
         this._stop();
         event.preventDefault();

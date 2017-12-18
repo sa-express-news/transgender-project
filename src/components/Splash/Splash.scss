@@ -17,8 +17,8 @@ article.Splash {
       fill: #eee;
 
       &:hover {
-        stroke: #666;
-        fill: #666;
+        stroke: #eee;
+        fill: #eee;
       }
     }
 
@@ -45,6 +45,17 @@ article.Splash {
     width: 100vw;
     height: 42vh;
 
+    .grommetux-hero__background {
+      img { opacity: 0.6; }
+    }
+
+    .grommetux-hero__foreground {
+        .hero-text-wrap {
+          margin-left: 5%;
+          flex-basis: 50%;
+        }
+    }
+
     @media screen and (max-width: 44.9376em) { // video as first slide styles
       .grommetux-hero__background {
         height: 30vh !important;
@@ -53,6 +64,8 @@ article.Splash {
       .grommetux-hero__foreground {
         .hero-text-wrap {
           align-items: center;
+          margin-left: 0;
+          h3 { display: none; }
 
           & > * {
             text-align: center;

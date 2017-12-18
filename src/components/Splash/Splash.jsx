@@ -115,7 +115,7 @@ const Splash = props => {
           />
         </Video>
       </Section>
-      {_.map(_.reverse(props.stories), buildArticleSection)}
+      {_.map(props.stories, buildArticleSection)}
     </Article>
   );
 };
