@@ -1,0 +1,35 @@
+.SlideshowButton-container {
+    font-size: 150%;
+    font-weight: bold;
+    position: absolute;
+    top: calc(21% + 60px);
+    z-index: 1000;
+}
+
+@media (min-width: 440px) {
+    .SlideshowButton-container {
+        font-size: 225%;
+    }
+}
+
+@media (min-width: 768px) {
+    .SlideshowButton-container {
+        top: calc(21% + 36px);
+    }
+}
+
+.SlideshowButton-container.right {
+    right: 0;
+}
+
+.SlideshowButton-container.left {
+    left: 0;
+}
+
+.SlideshowButton {
+    background: white;
+    color: #333;
+    opacity: .8;
+    cursor: pointer;
+    padding: .35em .4em;
+}

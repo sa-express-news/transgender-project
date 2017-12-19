@@ -5,7 +5,7 @@ import ReactVisibilitySensor from 'react-visibility-sensor';
 import './LandingPage.scss';
 
 import NavBar from '../NavBar/NavBar';
-import Splash from '../Splash/Splash';
+import Slideshow from '../Slideshow/Slideshow';
 import SubNav from '../SubNav/SubNav';
 import Cards from '../Cards/Cards';
 
@@ -80,10 +80,9 @@ class LandingPage extends Component {
           isSmallScreen={this.state.isSmallScreen}
         />
         <ReactVisibilitySensor onChange={this.isNavVisible.bind(this)} />
-        <Splash 
+        <Slideshow 
           stories={this.props.stories}
           navIsVisible={this.state.navIsVisible}
-          isSmallScreen={this.state.isSmallScreen}
         />
         <SubNav copy={this.props.navCopy.introduction} />
         <Cards 
