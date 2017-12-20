@@ -25,7 +25,7 @@ class Slideshow extends Component {
 
 	componentWillReceiveProps(nextProps) {
 		if (nextProps.stories.length !== this.props.stories.length) {
-			const slides = this.getSlides();
+			const slides = this.getSlides(nextProps.stories);
 			this.setState({ slides });
 		}
 	}
@@ -87,12 +87,13 @@ class Slideshow extends Component {
 		return true;
 	}
 
-	getSlides() {
-		const articles = this.props.stories.map((story, idx) => (
-			<Article story={story} moveForward={this.moveForward} moveBackward={this.moveBackward} 
+	getSlides(stories) {
+		const knownStories = stories ? stories : this.props.stories;
+		const articles = knownStories.map((story, idx) => (
+			<Article story={story} moveForward={this.moveForward.bind(this)} moveBackward={this.moveBackward} 
 			handleTouchStart={this.handleTouchStart} handleTouchEnd={this.handleTouchEnd} key={idx} />
 		));
-		const video = (<Video moveForward={this.moveForward} moveBackward={this.moveBackward} 
+		const video = (<Video moveForward={this.moveForward.bind(this)} moveBackward={this.moveBackward} 
 			handleTouchStart={this.handleTouchStart} handleTouchEnd={this.handleTouchEnd} />);
 		return [video].concat(articles)
 	}
