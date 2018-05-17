@@ -36,7 +36,7 @@ class Bios extends Component {
 	componentDidMount() {
 		window.scrollTo(0, 0);
 		this.clearPhotoTransitionInterval();
-    this.setPhotoTransitionInterval();
+    	this.setPhotoTransitionInterval();
 	}
 
 	componentWillUnmount() {
@@ -57,75 +57,77 @@ class Bios extends Component {
 	}
 
 	clearPhotoTransitionInterval() {
-    window.clearInterval(currentTransition);
-  }
+    	window.clearInterval(currentTransition);
+	}
 
-  transitionPhotos() {    
-    const { subject } = this.state,
-          currPhoto   = subject.displayed,
-          lastPhoto   = subject.photos.length - 1;
+	transitionPhotos() {    
+		const { subject } 	= this.state,
+		currPhoto   		= subject.displayed,
+		lastPhoto   		= subject.photos.length - 1;
 
-    if (currPhoto === lastPhoto) {
-      subject.displayed = 0;
-    } else {
-      subject.displayed += 1;
-    }
+		if (currPhoto === lastPhoto) {
+			subject.displayed = 0;
+		} else {
+			subject.displayed += 1;
+		}
 
-    this.setState({ subject });
-  }
+		this.setState({ subject });
+	}
 
-  setPhotoTransitionInterval() {
-    currentTransition = window.setInterval(this.transitionPhotos.bind(this), 3000);
-  }
+	setPhotoTransitionInterval() {
+		currentTransition = window.setInterval(this.transitionPhotos.bind(this), 3000);
+	}
 
 	getVisibility(subject, idx) {
-    return subject.displayed === idx;
-  }
+		return subject.displayed === idx;
+  	}
 
 	render() {
 		const { subject } = this.state;
 		return (
 			<Article 
-	      full={true}
-	      colorIndex="grey-1"
-	      align="center"
-	      pad="small"
-	      className="Bio"
-	    >
-	    	<Header full="horizontal" size="small">
-				  <Box 
-				    justify="start"
-				    direction="row"
-				    responsive={false}
-				    full="horizontal"
-				  >
-				   	{this.buildExitLink()}
-				  </Box>
+				full={true}
+				colorIndex="grey-1"
+				align="center"
+				pad="small"
+				className="Bio"
+			>
+				<Header full="horizontal" size="small">
+					<Box 
+						justify="start"
+						direction="row"
+						responsive={false}
+						full="horizontal"
+					>
+						{this.buildExitLink()}
+					</Box>
 				</Header>
-	    	<Heading margin="medium" tag="h1">{subject.name}, {subject.age}</Heading>
-	    	{_.map(subject.photos, (photo, idx) => (
-          <div key={idx}>
-            {this.getVisibility(subject, idx) &&
-              <Animate enter={{'animation': 'fade', 'duration': 400, 'delay': 0}}>
-                <Image 
-                  src={this.buildImgPath(subject.path, photo)}
-                  full={false}
-				  				fit='contain'
-				  				size='medium'
-                />
-              </Animate>
-            }
-            {!this.getVisibility(subject, idx) &&
-              <Image 
-                src={this.buildImgPath(subject.path, photo)}
-                className="hide"
-                full={false}
-				  			fit='contain'
-				  			size='medium'
-              />
-            }
-          </div>
-        ))}
+				<Heading margin="medium" tag="h1">
+					{subject.name}, {subject.age}
+				</Heading>
+				{_.map(subject.photos, (photo, idx) => (
+					<div key={idx}>
+						{this.getVisibility(subject, idx) &&
+							<Animate enter={{'animation': 'fade', 'duration': 400, 'delay': 0}}>
+								<Image 
+									src={this.buildImgPath(subject.path, photo)}
+									full={false}
+									fit='contain'
+									size='medium'
+								/>
+							</Animate>
+						}
+						{!this.getVisibility(subject, idx) &&
+							<Image 
+								src={this.buildImgPath(subject.path, photo)}
+								className="hide"
+								full={false}
+								fit='contain'
+								size='medium'
+							/>
+						}
+					</div>
+				))}
 				{_.map(subject.bio, (para, key) => <Paragraph key={key} size="large">{para}</Paragraph>)}
 				{subject.stories.length !== 0 && (
 					<Table className="article-table">
@@ -151,16 +153,16 @@ class Bios extends Component {
 				)}
 				{subject.video && (
 					<Video 
-	          full={false}
-					  size='large'
-					  poster={this.buildImgPath(subject.path, subject.photos[0])}
-					  className="video-block"
-	        >
-	          <source 
-	            src={this.buildVideoPath(subject.video)}
-	            type="video/mp4"
-	          />
-	        </Video>
+						full={false}
+						size='large'
+						poster={this.buildImgPath(subject.path, subject.photos[0])}
+						className="video-block"
+					>
+						<source 
+							src={this.buildVideoPath(subject.video)}
+							type="video/mp4"
+						/>
+					</Video>
 				)}
 				<Footer 
 					full="horizontal"
@@ -170,14 +172,14 @@ class Bios extends Component {
 						vertical: 'medium',
 					}}
 				>
-				  <Box 
-				    justify="start"
-				    direction="row"
-				    responsive={false}
-				    full="horizontal"
-				  >
-				   	{this.buildExitLink()}
-				  </Box>
+					<Box 
+						justify="start"
+						direction="row"
+						responsive={false}
+						full="horizontal"
+					>
+						{this.buildExitLink()}
+					</Box>
 				</Footer>
 			</Article>
 		);
