@@ -55,7 +55,6 @@ class LandingPage extends Component {
     const { photos } = this.state,
           currPhoto  = photos[idx].displayed,
           lastPhoto  = photos[idx].photos.length - 1;
-    console.log(photos)
 
     if (isReset || currPhoto === lastPhoto) {
       photos[idx].displayed = 0;
